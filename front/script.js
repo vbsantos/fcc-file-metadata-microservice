@@ -6,7 +6,7 @@ const input = document.querySelector('input[type="file"]')
 form.addEventListener('submit', (event) => {
   event.preventDefault();
   const data = new FormData()
-  data.append('file', input.files[0])
+  data.append('upfile', input.files[0])
 
   // Make API request
   fetch('/api/fileanalyze', {
