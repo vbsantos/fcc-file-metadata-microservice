@@ -1,9 +1,9 @@
 import express, { Express, NextFunction, Request, Response } from "express";
 import cors from "cors";
 import multer from "multer";
+
 import { AppController, IAppController } from "./Controllers/App.Controller";
 
-// DI
 const appController: IAppController = new AppController();
 
 // Express
@@ -14,8 +14,7 @@ const upload = multer();
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 app.use(upload.single("upfile"));
-// app.options("*", cors({ origin: false }));
-app.use(cors({ origin: true }));
+app.use(cors());
 
 // Routes
 app.post("/fileanalyse", appController.fileanalyse);

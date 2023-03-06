@@ -1,9 +1,11 @@
 # FreeCodeCamp - Back End Development and APIs Course
 
+> ⚠️ For some unknown reason (CORS error) I had to host this project in other place to pass the FreeCodeCamp Tests.
+
 - [x] You should provide your own project, not the example URL.
-- [ ] You can submit a form that includes a file upload.
-- [ ] The form file input field has the name attribute set to upfile.
-- [ ] When you submit a file, you receive the file name, type, and size in bytes within the JSON response.
+- [x] You can submit a form that includes a file upload.
+- [x] The form file input field has the name attribute set to upfile.
+- [x] When you submit a file, you receive the file name, type, and size in bytes within the JSON response.
 
 ## Certification Project - File Metadata Microservice
 
