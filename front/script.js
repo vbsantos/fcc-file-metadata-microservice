@@ -8,9 +8,6 @@ form.addEventListener('submit', (event) => {
   const data = new FormData()
   data.append('file', input.files[0])
 
-  console.log({file: input.files[0]});
-  console.log({data});
-
   // Make API request
   fetch('/api/fileanalyze', {
     method: 'POST',
