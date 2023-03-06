@@ -1,6 +1,6 @@
 # FreeCodeCamp - Back End Development and APIs Course
 
-- [ ] You should provide your own project, not the example URL.
+- [x] You should provide your own project, not the example URL.
 - [ ] You can submit a form that includes a file upload.
 - [ ] The form file input field has the name attribute set to upfile.
 - [ ] When you submit a file, you receive the file name, type, and size in bytes within the JSON response.
@@ -25,14 +25,26 @@ When you are done, make sure a working demo of your project is hosted somewhere 
 
 **HINT:** You can use the `multer` npm package to handle file uploading.
 
-## Unit Tests
-
-```text
-
-```
-
 ## Integration Tests
 
 ```text
+ PASS  __tests__/integration/Api.spec.ts
+  File upload endpoint
+    ✓ should upload a file and return its metadata (43 ms)
+    ✓ should return an error if no file is uploaded (10 ms)
 
+-------------------------|---------|----------|---------|---------|-------------------
+File                     | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s
+-------------------------|---------|----------|---------|---------|-------------------
+All files                |   81.57 |       50 |      40 |   83.78 |
+ src                     |   69.56 |        0 |       0 |   72.72 |
+  server.ts              |   69.56 |        0 |       0 |   72.72 | 24-25,30-31,36-37
+ src/Controllers         |     100 |      100 |     100 |     100 |
+  App.Controller.ts      |     100 |      100 |     100 |     100 |
+  HttpStatusCode.Enum.ts |     100 |      100 |     100 |     100 |
+-------------------------|---------|----------|---------|---------|-------------------
+Test Suites: 1 passed, 1 total
+Tests:       2 passed, 2 total
+Snapshots:   0 total
+Time:        2.359 s, estimated 3 s
 ```
