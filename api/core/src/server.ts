@@ -17,7 +17,7 @@ app.use(upload.single("upfile"));
 app.options("*", cors({ origin: false }));
 
 // Routes
-app.post("/fileanalyze", appController.fileAnalyze);
+app.post("/fileanalyse", appController.fileanalyse);
 
 // Error Handler Middleware
 app.use((err: Error, req: Request, res: Response, next: NextFunction) => {

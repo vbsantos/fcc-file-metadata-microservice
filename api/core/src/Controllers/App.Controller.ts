@@ -2,11 +2,11 @@ import { NextFunction, Request, Response } from "express";
 import { HttpStatusCode } from "./HttpStatusCode.Enum";
 
 export interface IAppController {
-  fileAnalyze(req: Request, res: Response, next: NextFunction): Promise<void>;
+  fileanalyse(req: Request, res: Response, next: NextFunction): Promise<void>;
 }
 
 export class AppController implements IAppController {
-  public async fileAnalyze(
+  public async fileanalyse(
     req: Request,
     res: Response,
     next: NextFunction

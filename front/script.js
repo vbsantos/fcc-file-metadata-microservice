@@ -9,7 +9,7 @@ form.addEventListener('submit', (event) => {
   data.append('upfile', input.files[0])
 
   // Make API request
-  fetch('/api/fileanalyze', {
+  fetch('/api/fileanalyse', {
     method: 'POST',
     body: data
   })

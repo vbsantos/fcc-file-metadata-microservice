@@ -7,7 +7,7 @@ describe("File upload endpoint", () => {
   it("should upload a file and return its metadata", async () => {
     let i = 0;
     const res = await request(app)
-      .post("/fileanalyze")
+      .post("/fileanalyse")
       .attach("upfile", './__tests__/integration/test-file.md')
       .expect(HttpStatusCode.OK);
 
@@ -18,7 +18,7 @@ describe("File upload endpoint", () => {
 
   it("should return an error if no file is uploaded", async () => {
     const res = await request(app)
-      .post("/fileanalyze")
+      .post("/fileanalyse")
       .expect(HttpStatusCode.BadRequest);
 
     expect(res.body).toHaveProperty("error");
