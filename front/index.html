@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="./assets/favicon.png" />
+  <link rel="stylesheet" type="text/css" href="./style.css">
+  <title>File Metadata Microservice</title>
+</head>
+
+<body>
+  <div id="main-container">
+    <h1>File Metadata Microservice</h1>
+    <p>The File Metadata Microservice is a simple API that allows developers to upload a file and receive its metadata.
+      With this API, you can easily get the filename, type, and size of the uploaded file.</p>
+
+    <h2>Example Usage</h2>
+
+    <h3>Upload a File</h3>
+    <p>To upload a file and get its metadata, you can send a POST request to the endpoint below with the file in the
+      payload.</p>
+    <p>
+      <code>POST /api/fileanalyze</code>
+    </p>
+
+    <h2>Try It Yourself</h2>
+
+    <h3>Upload a File</h3>
+    <form id="upload-form" action="/api/fileanalyze" method="post" enctype="multipart/form-data">
+      <label for="file">Choose a file:</label>
+      <input type="file" id="file" name="upfile">
+      <button type="submit">Upload File</button>
+    </form>
+    <p id="result">
+      <!-- Results will be displayed here -->
+    </p>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
