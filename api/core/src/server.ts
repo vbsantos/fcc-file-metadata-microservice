@@ -15,7 +15,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 app.use(upload.single("upfile"));
 // app.options("*", cors({ origin: false }));
-app.use(cors());
+app.use(cors({ origin: true }));
 
 // Routes
 app.post("/fileanalyse", appController.fileanalyse);
