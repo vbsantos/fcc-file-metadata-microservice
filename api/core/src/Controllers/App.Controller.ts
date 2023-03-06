@@ -22,7 +22,7 @@ export class AppController implements IAppController {
     }
 
     const okResponse = {
-      filename: file.originalname,
+      name: file.originalname,
       type: file.mimetype,
       size: file.size,
     };
