@@ -11,7 +11,7 @@ describe("File upload endpoint", () => {
       .attach("upfile", './__tests__/integration/test-file.md')
       .expect(HttpStatusCode.OK);
 
-    expect(res.body).toHaveProperty("filename");
+    expect(res.body).toHaveProperty("name");
     expect(res.body).toHaveProperty("type");
     expect(res.body).toHaveProperty("size");
   });
